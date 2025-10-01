@@ -1,0 +1,27 @@
+[package]
+name = "zelana_verifier"
+version = "0.1.0"
+description = "ZK proof verifier smart contract"
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/Zelana-Labs/zelana-verifier"
+readme = "README.md"
+
+[lib]
+crate-type = ["cdylib", "lib"]
+name = "zelana_verifier"
+
+[features]
+default = []
+cpi = ["no-entrypoint"]
+no-entrypoint = []
+no-idl = []
+no-log-ix-name = []
+idl-build = ["anchor-lang/idl-build"]
+client = []
+
+
+[dependencies]
+anchor-lang = "0.31.1"
+hex-literal = "1.0.0"
+solana-bn254 = "3.0.0"
