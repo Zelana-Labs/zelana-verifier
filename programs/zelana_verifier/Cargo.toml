@@ -23,5 +23,5 @@ client = []
 
 [dependencies]
 anchor-lang = "0.31.1"
-hex-literal = "1.0.0"
+hex-literal = "0.4.1"
 solana-bn254 = "3.0.0"
